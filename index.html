@@ -17,12 +17,12 @@
             <img src="images/user-circle.png" alt="Imagen de Usuario" class="imagen-usuario" ondblclick="dobleclick_avatar()" >
         </div>
         <div class="card-body">
-            <h1 onmouseover="over()" onmouseout="out()">Elena De Troya</h1>
+            <h1 onmouseover="over()" onmouseout="out()" onclick="cambieNombre(this)">Elena de Troya</h1>
             <h3>
-                <img src="images/map-marker.png" alt="mapa" class="icono">
+                <img src="images/map-marker.png" alt="mapa" class="icono" onclick="cambiaImagen(this)" >
                 Roma
             </h3>
-            <p>
+            <p ondblclick="elimine(this)">
                 Developer | Engineer | Problem Solver <br>
                 Master of shadows and the Internet
             </p>
