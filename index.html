@@ -14,7 +14,9 @@
 
     <div class="card">
         <div class="card-header">
-            <img src="images/user-circle.png" alt="Imagen de Usuario" class="imagen-usuario" ondblclick="dobleclick_avatar()" >
+            <div class="imagen-usuario">
+                <img src="images/user-circle.png" alt="Imagen de Usuario"  ondblclick="dobleclick_avatar()" >
+            </div>
         </div>
         <div class="card-body">
             <h1 onmouseover="over()" onmouseout="out()" onclick="cambieNombre(this)">Elena de Troya</h1>
@@ -22,8 +24,8 @@
                 <img src="images/map-marker.png" alt="mapa" class="icono" onclick="cambiaImagen(this)" >
                 Roma
             </h3>
-            <p ondblclick="elimine(this)">
-                Developer | Engineer | Problem Solver <br>
+            <p id="descripcion" ondblclick="elimine(this)">
+                Developer | <span class="purple">Engineer</span> | Problem Solver <br>
                 Master of shadows and the Internet
             </p>
             <p>
@@ -32,6 +34,9 @@
                     editar perfil
                 </a>
             </p>
+            <div>
+                <input type="text" name="nombre" id="nombre" onchange="cambioInput()">
+            </div>
         </div>
     </div>
     <script src="js/script.js"></script>
